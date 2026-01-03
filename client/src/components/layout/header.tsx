@@ -44,7 +44,9 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col gap-6 mt-6">
-                <div className="font-serif text-2xl font-bold text-primary">Lumière</div>
+                <Link href="/" className="font-serif text-2xl font-bold text-primary">
+                  Vet Wings<span className="text-foreground">.</span>
+                </Link>
                 <nav className="flex flex-col gap-4">
                   <Link href="/" className="text-lg font-medium hover:text-primary">Home</Link>
                   <Link href="/shop" className="text-lg font-medium hover:text-primary">Shop All</Link>
@@ -61,8 +63,8 @@ export function Header() {
           </Sheet>
 
           {/* Logo */}
-          <Link href="/" className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-foreground">
-              Lumière<span className="text-primary">.</span>
+          <Link href="/" className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-foreground hover:text-primary transition-colors">
+            Vet Wings<span className="text-primary">.</span>
           </Link>
 
           {/* Search Bar - Desktop */}

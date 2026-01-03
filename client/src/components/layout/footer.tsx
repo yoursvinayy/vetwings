@@ -1,16 +1,16 @@
 import { Link } from "wouter";
-import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
     <footer className="bg-secondary/30 pt-16 pb-8 border-t border-pink-100">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Brand Info */}
           <div className="space-y-4">
             <Link href="/" className="font-serif text-2xl font-bold tracking-tight block">
-              Lumière<span className="text-primary">.</span>
+              Vet Wings<span className="text-primary">.</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Discover the best premium beauty and cosmetic products. We believe in enhancing your natural glow with clean, effective ingredients.
@@ -55,29 +55,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="font-serif font-bold text-lg mb-4">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm text-muted-foreground">123 Beauty Avenue, Fifth Avenue, New York, NY 10012</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-sm text-muted-foreground">+1 (800) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-sm text-muted-foreground">hello@lumiere.com</span>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            © 2024 Lumière Beauty. All rights reserved.
+            © 2024 Vet Wings. All rights reserved.
           </p>
           <div className="flex gap-4">
             <span className="text-xs text-muted-foreground hover:text-primary cursor-pointer">Privacy Policy</span>
